@@ -17,11 +17,11 @@ jobs:
         uses: nikosch86/github-action-eks-kubectl@main
         with:
           command: |
-            apply -f ./01-hello-app-deployment-v1.yaml
-            apply -f ./02-hello-app-deployment-v2.yaml
-            apply -f ./03-hello-svc-v1.yaml
-            apply -f ./04-hello-svc-v2.yaml
-            apply -f ./05-ingress.yaml
+            "apply -f ./01-hello-app-deployment-v1.yaml"
+            "apply -f ./02-hello-app-deployment-v2.yaml"
+            "apply -f ./03-hello-svc-v1.yaml"
+            "apply -f ./04-hello-svc-v2.yaml"
+            "apply -f ./05-ingress.yaml"
         env:
           EKS_CLUSTER: ClusterGitHubActions
 
