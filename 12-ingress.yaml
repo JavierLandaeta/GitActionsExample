@@ -16,10 +16,3 @@ spec:
             name: hello-v1-svc
             port:
               number: 80
-      - path: /v2
-        pathType: Prefix
-        backend:
-          service:
-            name: hello-v2-svc
-            port:
-              number: 80
