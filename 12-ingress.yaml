@@ -7,19 +7,21 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - http:
+  - host: "a353962dfb519478f98ed83376937d09-1314709390.eu-west-3.elb.amazonaws.com"
+    http:
       paths:
       - path: /v1
-        pathType: ImplementationSpecific
+        pathType: Prefix
         backend:
           service:
             name: hello-v1-svc
             port:
               number: 80
-  - http:
+  - host: "a353962dfb519478f98ed83376937d09-1314709390.eu-west-3.elb.amazonaws.com"
+    http:
       paths:
       - path: /v2
-        pathType: ImplementationSpecific
+        pathType: Prefix
         backend:
           service:
             name: hello-v2-svc
