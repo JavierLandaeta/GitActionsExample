@@ -17,9 +17,6 @@ spec:
             name: hello-v1-svc
             port:
               number: 80
-  - host: "a353962dfb519478f98ed83376937d09-1314709390.eu-west-3.elb.amazonaws.com"
-    http:
-      paths:
       - path: /v2
         pathType: Prefix
         backend:
